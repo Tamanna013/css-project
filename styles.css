@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+@keyframes gradientAnimation{
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+body {
+    margin: 0%;
+    height: 100vh;
+    background: linear-gradient(45deg, #902f90, #310153, #ca02ca, #0141a2);
+    background-size: 300% 300%;
+    animation: gradientAnimation 10s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+}
+#layout{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    place-items: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+#btn{
+    width: 50px;
+    height: 60px;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 50%;
+    border: none;
+    background: radial-gradient(#d305f7, #5402fa);
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 0 5px #000000;
+}
+#btn:hover {
+    box-shadow: 0 0 5px  #fff;
+}
+.box {
+    position: relative;
+    border-radius: 20px;
+    transform-style: preserve-3d;
+    z-index: 1;
+    background: radial-gradient(#c320e0, #5910eb);
+}
+.box .card {
+    position: relative;
+    background: #ffffff12;
+    width: 300px;
+    min-height: 350px;
+    backdrop-filter: blur(10px);
+    border: 0.5px solid #0a0eed21;
+    border-radius: 20px;
+    box-shadow: 0 25px 45px #000000;
+    z-index: 0;
+}
+.elements {
+    position: absolute;
+    top: 120px;
+    left: 25px;
+    width: 250px;
+    height: auto;
+    border-radius: 5px;
+    text-align: center;
+    background: transparent;
+    transform: translateZ(80px);
+    z-index: 2;
+}
+.elements h2 {
+    font-size: 2.5rem;
+    font-weight: 1000;
+    color: #f6d8d5;
+    text-transform: uppercase;
+}
+.elements p {
+    font-size: 1.2rem;
+    color: #76108d;
+}
+.smallerBox {
+    position: relative;
+    background: #ffffff12;
+    width: 300px;
+    min-height: 150px;
+    backdrop-filter: blur(10px);
+    border: 0.5px solid #0a0eed21;
+    border-radius: 20px;
+    box-shadow: 0 25px 45px #000000;
+    z-index: 0;
+}
+.smallestBox {
+    position: relative;
+    background: #ffffff12;
+    width: 300px;
+    min-height: 100px;
+    backdrop-filter: blur(10px);
+    border: 0.5px solid #0a0eed21;
+    border-radius: 20px;
+    box-shadow: 0 25px 45px #000000;
+    z-index: 0;
+}
+.miniBox {
+    position: relative;
+    background: #ffffff12;
+    width: 300px;
+    min-height: 350px;
+    backdrop-filter: blur(10px);
+    border: 0.5px solid #0a0eed21;
+    border-radius: 20px;
+    box-shadow: 0 25px 45px #000000;
+    z-index: 0;
+}
+.spacer {
+    height: 500px;
+    display: block;
+}
